@@ -1,0 +1,247 @@
+<html>
+<head>
+   
+</head>
+<link rel="shortcut icon" href="p7.png">
+
+<title>calculator</title>
+
+
+<style>
+body
+{
+ 
+}
+h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color: skyblue;  
+    color: white;  
+    }  
+  
+
+  
+.formstyle  
+{  
+width: 250px;  
+height: 430px;  
+margin: auto;  
+border: 3px solid ;  
+border-radius: 12px;  
+padding: 20px; 
+background:linear-gradient(#cbc3e3,#c3b1e1);  
+margin-top: 100px;
+}  
+
+@media screen and (max-width:750px)
+{
+.formstyle  
+	
+	{
+	background-color: #c3b1e1 !important;
+	}
+}
+  
+  
+  
+input  
+{  
+width:58px;  
+height:60px;
+background-color:gray  
+color: white;  
+border: 3px solid gray;  
+    border-radius: 5px;  
+    padding:px;  
+    margin:px;  
+    font-size: 20px;  
+}  
+  
+  
+.cal{  
+width: 100%;
+border: none;  
+    border-radius: 3px;  
+    padding: 20px; 
+    font-size:20px; 
+
+    
+}  
+
+  
+</style>  
+  
+</head>  
+<body>  
+ 
+<div class= "formstyle">  
+<form name = "form1">  
+      <br>
+    <!-- This input box shows the button pressed by the user in calculator. -->  
+ <input type="text" id = "calc" class="cal" readonly>  <br> <br>             
+
+
+
+
+  <br><br>
+  <input type = "button"  value = "1" onclick ="f1()">  
+  <input type = "button" value = "2" onclick ="f2()">  
+  <input type = "button" value = "3" onclick ="f3()">  
+   <input type = "button" value = "+" onclick ="f4()">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "f5()">  
+  <input type = "button" value = "5" onclick = "f6()">  
+  <input type = "button" value = "6" onclick = "f7()">  
+  <input type = "button" value = "-" onclick = "f8()">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "f9()">  
+  <input type = "button" value = "8" onclick = "f10()">  
+  <input type = "button" value = "9" onclick = "f11()">  
+  <input type = "button" value = "*" onclick = "f12()">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "c" id="clear" onclick = "f13()">  
+  <input type = "button" value = "0" onclick = "f14()">  
+    <input type = "button" value = "/" onclick = "f15() ">  
+   <input type = "button" value = "=" onclick = "f16() "> 
+  <br>   
+ 
+    
+</form>  
+</div>  
+</body>  
+</html>  
+
+
+
+
+
+
+
+<script>
+      function f1()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="1";
+			document.getElementById("calc").value=x+num;
+		}
+	
+	function f2()
+		{
+	 		a=document.getElementById("calc").value;
+  			num="2"
+			document.getElementById("calc").value=a+num;
+
+		}
+
+	 function f3()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="3";
+			document.getElementById("calc").value=x+num;
+		}
+	 function f4()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="+";
+			document.getElementById("calc").value=x+num;
+		}
+	function f5()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="4";
+			document.getElementById("calc").value=x+num;
+		}
+	function f6()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="5";
+			document.getElementById("calc").value=x+num;
+		}
+	function f7()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="6";
+			document.getElementById("calc").value=x+num;
+		}
+	function f8()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="-";
+			document.getElementById("calc").value=x+num;
+		}
+	function f9()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="7";
+			document.getElementById("calc").value=x+num;
+		}
+
+	function f10()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="8";
+			document.getElementById("calc").value=x+num;
+		}
+	function f11()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="9";
+			document.getElementById("calc").value=x+num;
+		}
+	function f12()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="*";
+			document.getElementById("calc").value=x+num;
+		}
+	function f13()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="";
+			document.getElementById("calc").value="";
+		}
+	
+	function f14()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="0";
+			document.getElementById("calc").value=0;
+		}
+
+	function f15()
+		
+		{
+			x=document.getElementById("calc").value;
+			num="/";
+			document.getElementById("calc").value=x+num;
+		}
+	function f16()
+		{
+x=document.getElementById("calc").value;
+                    
+  			document.getElementById("calc").value=eval(x);
+		}
+		function f13()
+		{
+    	x=document.getElementById("clear").value;                
+  			document.getElementById("calc").value=x.slice(0,-1);
+		}
+
+</script>
